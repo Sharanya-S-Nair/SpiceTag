@@ -25,7 +25,7 @@ public class TestBase {
 			try {
 				prop = new Properties();
 				FileInputStream ip= new FileInputStream("C:\\Users\\Sharanya\\Desktop\\SpiceTag\\src\\main\\java\\spice\\config\\config.properties"); 
-	;			prop.load(ip);
+				prop.load(ip);
 			}catch(FileNotFoundException e) {
 				e.printStackTrace();
 			}catch(IOException e) {

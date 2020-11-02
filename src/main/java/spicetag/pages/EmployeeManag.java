@@ -19,6 +19,8 @@ WebElement Config;
 WebElement EmailID;
 @FindBy(xpath="//input[@id=\"mat-input-1\"]")
 WebElement LoginID;
+@FindBy(xpath="//span[@class=\"mat-form-field-label-wrapper\"][1]")
+WebElement Warehouse; xsffd;
 @FindBy(xpath="//input[@formcontrolname=\"city\"]")
 WebElement City;
 
