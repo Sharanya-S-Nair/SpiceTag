@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-02T11:28:10Z" name="Default suite" finished-at="2020-11-02T11:28:40Z" duration-ms="30183">
+    <groups>
+    </groups>
+    <test started-at="2020-11-02T11:28:10Z" name="Default test" finished-at="2020-11-02T11:28:40Z" duration-ms="30183">
+      <class name="spicetag.testcases.EmployeeManagTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:spicetag.testcases.EmployeeManagTest@32502377]" started-at="2020-11-02T16:58:10Z" name="setup" finished-at="2020-11-02T16:58:32Z" duration-ms="21565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ClickOnEmp()[pri:0, instance:spicetag.testcases.EmployeeManagTest@32502377]" started-at="2020-11-02T16:58:32Z" name="ClickOnEmp" finished-at="2020-11-02T16:58:40Z" duration-ms="8588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnEmp -->
+      </class> <!-- spicetag.testcases.EmployeeManagTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
