@@ -4,8 +4,6 @@ package spicetag.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import spicetag.base.TestBase;
 import spicetag.pages.EmployeeManag;
 import spicetag.pages.HomePage;

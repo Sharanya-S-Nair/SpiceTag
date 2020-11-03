@@ -1,7 +1,5 @@
 package spicetag.pages;
 
-import java.io.ObjectInputFilter.Config;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,9 +18,11 @@ WebElement EmailID;
 @FindBy(xpath="//input[@id=\"mat-input-1\"]")
 WebElement LoginID;
 @FindBy(xpath="//span[@class=\"mat-form-field-label-wrapper\"][1]")
-WebElement Warehouse; xsffd;
+WebElement Warehouse; 
 @FindBy(xpath="//input[@formcontrolname=\"city\"]")
 WebElement City;
+@FindBy(xpath="//i[@class=\"icon-user-plus\"]")
+WebElement CreateEmp;
 
 
 public EmployeeManag() {
@@ -45,6 +45,10 @@ public void ClickOnLoginId() {
 }
 public void ClickOnCity() {
 	City.click();
+}
+public void ClickOnCreateEmp() throws InterruptedException {
+	Thread.sleep(5000);
+	CreateEmp.click();
 }
 }
 
