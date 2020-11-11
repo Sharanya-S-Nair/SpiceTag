@@ -4,6 +4,8 @@ package spicetag.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import spicetag.base.TestBase;
 import spicetag.pages.EmployeeManag;
 import spicetag.pages.HomePage;
@@ -73,6 +75,11 @@ public class HomePageTest extends TestBase {
 		Assert.assertEquals("Dummy Task Created By Spicetag", "Dummy Task Created By Spicetag");
 	}
 	
+	
+	@Test
+	public void ClickConfig() throws InterruptedException {
+		homepage.ClickOnConfig();
+	}
 	
 	
 	@AfterMethod 

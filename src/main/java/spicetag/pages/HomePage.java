@@ -2,6 +2,7 @@ package spicetag.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import spicetag.base.TestBase;
@@ -37,8 +38,11 @@ WebElement FilterSearchBtn;
 @FindBy(xpath="//li[@class=\"link dropdown ng-star-inserted\"][1]") 
 WebElement Config;
 
+@FindBy(xpath="//SPAN[@_ngcontent-c4=''][text()='Employee Management']")
+WebElement EmpMgt;
 
-
+@FindBy(xpath="//button[@title=\"Create Employee\"]")
+WebElement CreateEmp;
     public HomePage() {
 	PageFactory.initElements(driver, this);
 }
@@ -80,10 +84,10 @@ WebElement Config;
 		
 	}
 	public void ClickOnConfig() throws InterruptedException {
-		Config.click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//span[@class=\"nav-label \"][text()='Employee Management']")).click();
-		
+		Actions action = new Actions(driver);
+		action.moveToElement(Config).build().perform();
+		EmpMgt.click();
+		CreateEmp.click();
 	}
 	}
 

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="spicetag.testcases.EmployeeManagTest">
+      <class name="spicetag.testcases.CreateNewEmpTest">
         <methods>
+          <include name="ValidateEmpType"/>
           <include name="setup"/>
-          <include name="ClickOnEmp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- spicetag.testcases.EmployeeManagTest -->
+      </class> <!-- spicetag.testcases.CreateNewEmpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

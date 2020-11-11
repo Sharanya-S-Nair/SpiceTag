@@ -21,13 +21,15 @@ public class EmployeeManagTest extends TestBase {
 	   initialization();
 		loginPage = new LoginPage();
 	    homepage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	    //employeepage = homepage.ClickOnConfig();  
+	   //employeepage = homepage.ClickOnConfig();  
 }
+   
    @Test
    public void ClickOnEmp() throws InterruptedException{
 	   Thread.sleep(5000);
 	   homepage.ClickOnConfig();
-   }
+	  
+ }
    //@Test
    public void ClickOnEmail() {
 	   employeepage.ClickOnEmailId();
